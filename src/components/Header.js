@@ -9,13 +9,23 @@ function Header(props) {
 
   //  useState using props coming from the parent
 
-  const [language, setLang] = useState(props.language)
+  const [language, setLang] = useState(props.language);
+  const [headerColor, setHeaderColor] = useState(false);
 
+  const listenScrollEvent = e => {
+    if (window.scrollY > 200) {
+      setHeaderColor(true)
+    } else {
+      setHeaderColor(false)
+    }
+  };
 
   // useEffect to apply / update this comp when props from parent change
 
   useEffect (() => {
     setLang(props.language);
+    window.addEventListener("scroll", listenScrollEvent);
+    // return () => window.removeEventListener("scroll", listenScrollEvent);
   },[props.language])
 
 
@@ -43,7 +53,7 @@ function Header(props) {
 
   return (
 
-    <div className="Header" id='Header' style={{backgroundColor:props.headerColor}} >
+    <div className="Header" id='Header' style={{backgroundColor: headerColor? 'var(--brand-main-full)' : 'transparent'}} >
         <div className="nav-bar">
           <div className="brand">
             <a href="#">
@@ -51,7 +61,7 @@ function Header(props) {
             </a>
           </div>
 
-          <select value={props.language} disabled={true} onChange={e => props.changeLang(e.target.value)}>
+          <select value={props.language} disabled={false} onChange={e => props.changeLang(e.target.value)}>
           <option value="EN">English</option>
           <option value="NL">Nederlands</option>
           </select>

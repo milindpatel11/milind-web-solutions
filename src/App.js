@@ -16,27 +16,20 @@ class App extends React.Component {
       headerColor: 'transparent'
     }
     this.changeLang = this.changeLang.bind(this);
-    this.listenScrollEvent = this.listenScrollEvent.bind(this);
   }
 
   changeLang = (lang) => {this.setState({language:lang}) };
-  listenScrollEvent = e => {
-    if (window.scrollY > 200) {
-      this.setState({headerColor: 'var(--brand-main-full)'})
-    } else {
-      this.setState({headerColor: 'transparent'})
-    }
-  };
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent);
-    console.log("Listening scroll");
-  }
+
+  // componentDidMount() {
+  //   window.addEventListener('scroll', this.listenScrollEvent);
+  //   console.log("Listening scroll");
+  // }
 
   render() {
     return (
       <div className="App">
-            <Header changeLang={this.changeLang} language={this.state.language} headerColor={this.state.headerColor}/>
+            <Header changeLang={this.changeLang} language={this.state.language}/>
             <Home language={this.state.language} />
             <About language={this.state.language} />
             <Services language={this.state.language} />
