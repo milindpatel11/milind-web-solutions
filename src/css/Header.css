@@ -1,0 +1,163 @@
+.Header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  /* background-color: transparent; */
+  min-height: 70px;
+  /* max-height: 70px; */
+  transition: .3s ease background-color;
+  /* border-bottom: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+.Header .nav-bar .brand {
+  align-items: center;
+  max-width: 40%;
+  height: 100%;
+  /* margin: 5px 10px; */
+}
+
+
+.Header .nav-bar .brand img {
+  display: block;
+  align-self: flex-start;
+  width: auto;
+  height: 50px;
+  margin: auto 5px;
+}
+/*
+.Header .nav-bar .brand a{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  border-left: 3px solid white
+} */
+
+
+.Header select {
+  display: block;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #444;
+  width: 120px;
+  max-width: 120px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.Header .hamburger {
+  max-width:35px;
+  max-height:35px;
+  z-index: 10;
+  display: inline-block;
+  position: relative;
+}
+
+
+.Header .hamburger img{
+  max-width:35px;
+  max-height:35px;
+}
+
+.Header .nav-list ul {
+  list-style: none;
+  position: absolute;
+  background-color: var(--brand-main-ninty);
+  width: 100vw;
+  height: 100vh;
+  left: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: .5s ease left;
+}
+
+.Header .nav-list ul.active {
+  left: 0%;
+  margin-top: 0;
+}
+
+.Header .nav-list ul a {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+}
+
+.Header .nav-list ul a:hover {
+  color: grey
+}
+
+
+
+@media only screen and (min-width: 800px) {
+
+  .Header .hamburger{
+    display: none;
+  }
+
+
+  .Header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .Header .nav-list ul li {
+  display: inline-block;
+  }
+
+  .Header .nav-list ul li a {
+  font-size: 15px;
+  padding: 10px;
+  }
+
+  .Header .nav-list ul a:after {
+  display: none;
+  }
+/* End header */
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+  .Header .nav-list ul li a {
+  font-size: 18px;
+  padding: 15px;
+  }
+
+/* End header */
+}

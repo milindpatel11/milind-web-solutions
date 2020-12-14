@@ -1,0 +1,211 @@
+.Contact {
+  background-image: url(../img/home.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  z-index: 1;
+  max-width: 100vw;
+  min-height: 70vh;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+
+	/* margin: 0 auto;
+
+  position: relative; */
+
+  /* display: flex;
+  z-index: 1;
+  max-width: 100vw;
+  margin: 0 auto;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: flex-start;
+   */
+}
+
+.Contact::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .7;
+  z-index: -1;
+}
+
+.Contact .section-title {
+	color: white;
+}
+
+/* .Contact .inner-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 95%;
+}
+
+.Contact .contact-left {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 45, 89, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  align-items: center;
+  justify-content: space-between;
+  color: white
+}
+
+.Contact .contact-left h2{
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.Contact .contact-left h3{
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align:center;
+  line-height: 1.5
+}
+
+.Contact .social-group {
+
+}
+
+
+.Contact .social-item{
+  border-radius: 20px;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 2px 20px;
+  max-width: 150px
+}
+
+.Contact .social-item:hover{
+  background-color: var(--brand-bright);
+  border-color: grey
+}
+
+.Contact .social-item .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Contact .social-item .icon img{
+	max-height: 20px;
+	max-width: 20px;
+}
+
+.Contact .social-item h3{
+  margin: 5px;
+  font-size: 14px
+} */
+
+.Contact .contact-right {
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-content: center;
+  padding: 20px 10px; /* adds padding at the top and bottom of the inner container */
+  width: 55%; /* width of inner container equals 95% of the outer container */
+  margin: 0 auto; /*centers the outer container in the middle of the outer container */
+  background-color:rgba(0, 45, 89, 0.7);
+  border-radius: 10px;
+  margin: auto 20px;
+  /* max-width: 50%; */
+  justify-content: space-between;
+  align-items: center;
+  min-width: 300px
+}
+
+
+
+.Contact .contact-form {
+  width: 80%; /* width of inner container equals 85% of the inner container */
+  margin: 0 auto; /*centers the outer container in the middle of the inner container */
+	text-align: left;
+}
+
+.Contact .contact-form p {
+  margin: 0; /* removes all margins from the p tags */
+  margin: 10px 0; /* add 5px margin at the top and bottom of the p tags */
+  color: white; /* changes the text color of the p tag to white */
+	font-weight: bold;
+}
+
+.Contact .contact-form input {
+  border: none; /* removes the border on the input */
+  width: 100%; /* makes the input width same as the contact-form div*/
+  margin-bottom: 15px; /* adds margin at the bottom of the input */
+  padding: 10px; /* adds 10px padding to all sides of the input */
+  box-sizing: border-box; /* prevents the input from overflowing out of the parent div */
+  border-radius: 5px; /* curves the edges of the input by 3px */
+}
+
+.Contact .contact-form textarea {
+
+	border: none; /* removes the border on the input */
+  width: 100%; /* makes the input width same as the contact-form div*/
+  margin-bottom: 15px; /* adds margin at the bottom of the input */
+  padding: 10px; /* adds 10px padding to all sides of the input */
+  box-sizing: border-box; /* prevents the input from overflowing out of the parent div */
+  border-radius: 5px; /* curves the edges of the input by 3px */
+	min-height: 120px; /* gives the text-area a minimum height of 120px */
+  resize: vertical; /* limits resizing to vertical resizing */
+}
+
+.Contact .contact-form button {
+  border: none; /* removes the border on the button */
+  width: 150px;
+  height: 40px;
+  padding: 7px; /*  adds px padding to all sides of the button */
+  background: var(--brand-bright); /* gives the button a background color */
+  color: white; /* changes the text color of the button to white */
+  border-radius: 20px; /* curves the edges of the button by 4px */
+  cursor: pointer; /* changes the mouse pointer when you hover over the button */
+  font-weight: 600; /* boldens the text of the button */
+  font-family: var(--font-main);
+  letter-spacing:1px;
+	font-size: 14px;
+}
+
+.Contact .contact-form button:hover {
+	color:black;
+	background:white;
+	border:2px solid var(--brand-bright)
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  /* .Contact .inner-contact {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Contact .inner-contact .contact-left{
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px
+  } */
+
+  .Contact .contact-right{
+    width: 80%;
+    min-width: 250px;
+  }
+
+}

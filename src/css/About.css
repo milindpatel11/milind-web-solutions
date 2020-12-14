@@ -1,0 +1,137 @@
+.About {
+  flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 40px 10px;
+  position: relative;
+  min-height: 50vh;
+
+  /* display: flex;
+  z-index: 1;
+  max-width: 100vw;
+  margin: 0 auto;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: flex-start;
+   */
+}
+
+.About .about-inner{
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 100%;
+  align-self: stretch;
+}
+
+.About .col-left {
+  width: 85%;
+  max-width: 350px
+  /* height: 250px; */
+}
+
+.About .col-right {
+	width: 85%;
+	text-align: left;
+	margin-right: 10px;
+  padding: 0 10px
+  /* padding-top: 60px */
+}
+
+.About .col-right p {
+	margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.About h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: .2rem;
+  margin-bottom: 10px;
+}
+
+.About .col-left .about-img {
+	/* height: 100%; */
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+
+.About .col-left img {
+	border-radius: 10px
+}
+/*
+.About .col-left .about-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+	border: 7px solid var(--brand-main-full);
+	z-index: -1;
+  border-radius: 10px
+} */
+
+.About .cta {
+	color:var(--brand-main-full);
+  min-width: 150px;
+  /* margin-top: 30px */
+}
+
+.About .cta:hover {
+	color:white;
+  background-color: var(--brand-main-full)
+}
+
+@media only screen and (min-width: 800px) {
+
+  .About{
+		flex-direction: column;
+	}
+
+  .About .about-inner{
+  	flex-direction: row;
+    padding-bottom: 20px;
+  }
+
+	.About .col-left {
+		/* margin-left: 60px; */
+    padding-left: 20px
+	}
+	.About .about .col-left .about-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid var(--brand-main-full);
+	}
+
+	.About .col-right {
+		text-align: left;
+		margin-right: 30px;
+    padding: 0 20px
+	}
+
+  .About .cta {
+    /* margin-top: 50px */
+  }
+
+  .About .col-right p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .About .col-left {
+  	min-width: 350px;
+  	min-height: 250px;
+    width: 450px;
+  	height: 350px;
+  }
+
+}

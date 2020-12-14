@@ -1,0 +1,213 @@
+.App {
+  /* text-align: center; */
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+/*
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+:root {
+  --brand-main-full: rgb(15, 83, 186);
+  --brand-main-ninty: rgba(15, 83, 186, 0.9);
+  --brand-main-seventy: rgba(15, 83, 186, 0.7);
+  --brand-main-fifty: rgba(15, 83, 186, 0.5);
+  --brand-main-twf:rgba(15, 83, 186, 0.25);
+  --brand-main-ten:rgba(15, 83, 186, 0.1);
+  --brand-main-five:rgba(15, 83, 186, 0.05);
+  --brand-light:rgba(58,178,206, 0.05);  /*change this*/
+  --brand-bright: rgb(186, 119, 15);
+  --brand-bright-fty: rgb(186, 119, 15, 0.5);
+  --brand-bright-twf: rgb(186, 119, 15, 0.25);
+  --brand-bright-ten: rgba(186, 119, 15, 0.1);
+  --white-dark: rgba(255,255,255,0.9); /*change this*/
+  --white-seventy: rgba(255,255,255,0.8); /*change this*/
+
+  --white-light: rgba(255,255,255,0.02); /*change this*/
+  --text-white: rgb(250, 250, 250); /*change this*/
+  --font-main: 'Montserrat', sans-serif; /*change this*/
+
+}
+
+
+
+.container {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  }
+
+
+.cta {
+	display: inline-block;
+	padding: 10px 20px;
+	color: white;
+  background-color: transparent;
+  border: 2px solid var(--brand-main-full);
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	margin: 20px;
+	transition: .3s ease;
+	transition-property: background-color, color, border-color;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 100px
+}
+
+a.disabled-btn {
+  pointer-events: none;
+  cursor: default;
+  color: grey;
+}
+
+.cta:hover {
+	color: black;
+	background-color: white;
+}
+
+.section-title {
+	font-size: 30px;
+	font-weight: 500;
+	color: black;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-align: center;
+}
+.section-title span {
+	color: var(--brand-main-full);
+}
+
+
+.dummy-div {
+	min-height: 70px;
+	background-color: transparent;
+	position:absolute;
+	z-index: 1;
+	align-self: flex-end;
+	bottom: 0
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgba(0, 45, 89, 1); */
+  /* background-image: linear-gradient(60deg, #BA760F  0%, #E99413 100%); */
+  background-image: linear-gradient(60deg, #002d59  0%, #1368E9 100%);
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.Footer .thanks{
+  align-self: stretch;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px
+}
+
+.Footer .brand{
+  max-width: 120px;
+  margin: 15px auto
+}
+
+.Footer .copy{
+  margin-bottom: 10px;
+}
+
+.Footer h2{
+  margin: 2px;
+  font-size:18px;
+  color:white
+}
+
+.Footer p{
+  margin: 2px;
+  color:white;
+  font-size: 14px;
+}
+
+.Footer .thanks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-style:italic;
+}
+
+@media only screen and (max-width: 700px) {
+
+  .Footer p{
+    font-size: 12px
+  }
+
+
+/* End header */
+}
+
+body{
+  /* overflow-y: hidden; */
+}
+
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+p {
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+}
