@@ -1,6 +1,6 @@
 import '../css/About.css';
 import { useState, useEffect } from 'react';
-import pic from '../img/about-cropped.png';
+import pic from '../img/about-me.png';
 // import pic from '../img/about-img.jpg'; // gives image path
 
 const about_data =  {"EN" : {"l1": "About", "l2":"Milind", "l3":"Physican, Business Professional, and aspiring Full Stack Developer", "l4":"Milind is a Physician from India with an MBA in the US. While in the business school, he gradually started learning data science and computer science. During his MBA in the US, he worked at a health insurance company on procurement and finance. After MBA, he worked with two early stage startups (e-commerce and diagnostic device) helping them with most business aspects of starting a venture. These include finance, research, operations and logistics, customer service, data analysis, SEO/SEM, lean methodologies, fundraising, marketing and strategy. Milind has been web development online for the last two years and this website is to demonstrate some of the work on web development for freelancing and employment purposes in web development and launching MVP for startups.", "bttn":"See LinkedIn"} ,
