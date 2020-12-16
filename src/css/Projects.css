@@ -1,0 +1,112 @@
+.Projects {
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 50px 0;
+	z-index: 1;
+	background-color: white;
+	position: relative;
+}
+.Projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+.Projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 20px;
+	max-width: 1200px;
+}
+.Projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 20px;
+	opacity: 0;
+	transform: translateY(20vh)
+}
+
+.Projects .show-animate {
+	transform: translateY(0);
+	opacity: 1;
+  transition: transform 1s;
+	transition: opacity 3s
+}
+
+.Projects .project-info {
+	padding: 30px;
+	flex-basis: 60%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+.Projects .project-info h1 {
+	font-size: 30px;
+	font-weight: 500;
+}
+.Projects .project-info h2 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+.Projects .project-info p {
+	font-size: 14px;
+	color: white;
+}
+.Projects .project-img {
+	flex-basis: 40%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	/* border-radius: 0 20px 20px 0 */
+}
+
+.Projects .project-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: .7;
+	/* border-radius: 0 20px 20px 0 */
+}
+
+.Projects .project-img img {
+	transition: .3s ease transform;
+}
+.Projects .project-item:hover .project-img img {
+	transform: scale(0.9);
+	/* border-radius: 20px; */
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.Projects .project-item {
+		flex-direction: row;
+	}
+	.Projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	.Projects .project-item {
+		height: 400px;
+		width: 100%;
+		/* border-radius: 0; */
+	}
+	.Projects .all-projects .project-info {
+		height: 100%;
+	}
+	.Projects .all-projects .project-img {
+		height: 100%;
+	}
+}

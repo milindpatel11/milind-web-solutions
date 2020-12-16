@@ -106,13 +106,14 @@
 }
 
 .Header .nav-list ul a {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
   display: block;
+  padding: 40px
 }
 
 .Header .nav-list ul a:hover {

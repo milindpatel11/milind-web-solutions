@@ -33,11 +33,10 @@ function Footer(props) {
           <img src={pic} alt="logo-electsmart-US"/>
         </a>
       </div>
-      <h2>Stay Infomed, Stay Engaged, Elect Right People</h2>
-      <p className='copy'>Copyright © 2020 electsmartUS. All rights reserved. Designed and Developed by Milind Patel</p>
+      <h2>Complete Website and Business solution</h2>
+      <p className='copy'>Copyright © 2020 Milind Patel. All rights reserved.</p>
 
       <div className='thanks'>
-        <p> Thanks to Shaif Irfan for some design inspiration and the <a href="https://www.youtube.com/watch?v=ZFQkb26UD1Y" target="_blank" rel="noopener noreferrer" > Video Tutorial </a> </p>
         <p> Thanks to <a href="https://icons8.com" target="_blank" rel="noopener noreferrer" > https://icons8.com </a> for Icons in Resources Section  </p>
       </div>
     </div>

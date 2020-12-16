@@ -31,7 +31,7 @@
 } */
 
 .Home .intro {
-  display: flex;
+  display: none;
   flex-direction: column;
   /* background-color: var(--brand-main-ten); */
   padding: 20px;
@@ -97,11 +97,12 @@
 .Home h1 {
   display: block;
   width: fit-content;
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
   color: transparent;
   animation: text_reveal .5s ease forwards;
   animation-delay: 1s;
+  margin: 10px
 }
 
 .Home h1:nth-child(1) {

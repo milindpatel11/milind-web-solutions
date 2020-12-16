@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -33,6 +34,7 @@ class App extends React.Component {
             <Home language={this.state.language} />
             <About language={this.state.language} />
             <Services language={this.state.language} />
+            <Projects language={this.state.language} />
             <Contact language={this.state.language} />
             <Footer language={this.state.language} />
       </div>

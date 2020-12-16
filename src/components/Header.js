@@ -25,7 +25,7 @@ function Header(props) {
   useEffect (() => {
     setLang(props.language);
     window.addEventListener("scroll", listenScrollEvent);
-    // return () => window.removeEventListener("scroll", listenScrollEvent);
+    return () => window.removeEventListener("scroll", listenScrollEvent);
   },[props.language])
 
 
@@ -61,7 +61,7 @@ function Header(props) {
             </a>
           </div>
 
-          <select value={props.language} disabled={false} onChange={e => props.changeLang(e.target.value)}>
+          <select value={props.language} disabled={true} onChange={e => props.changeLang(e.target.value)}>
           <option value="EN">English</option>
           <option value="NL">Nederlands</option>
           </select>
