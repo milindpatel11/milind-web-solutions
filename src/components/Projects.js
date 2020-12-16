@@ -4,7 +4,7 @@ import { useState, useEffect, useLayoutEffect, useRef } from 'react'; // gives i
 
 
 const projects_title = { "EN": { "l1": "Recent", "l2":'Portfolio'},
-  "NL" : { "l1": "Onze", "l2":'Portfolio'}}
+  "NL" : { "l1": "Recente", "l2":'Portfolio'}}
 
 const projects_data = {
   "EN": [
@@ -13,7 +13,7 @@ const projects_data = {
       "title": "This Website",
       "subtitle":"Business site for Milind Patel",
       "link":"",
-      "description": "Designing elegant and responsive websites for landing pages for your venture or personal website. We can develop and code site for clients who have their own design that needs to be coded from. We can also help you both design and develop the website as well.",
+      "description": "Initially developed by just HTML, CSS and JS with simple look and feel; now modified using ReactJS to use smooth billingual transition as well as some animations triggering with scrolling.",
       "background":""
     },
     {
@@ -44,35 +44,35 @@ const projects_data = {
   "NL": [
     {
       "key": 1,
-      "title": "Mantente Informada!",
-      "subtitle":"",
+      "title": "Deze website",
+      "subtitle":"Bedrijfssite voor Milind Patel",
       "link":"",
-      "description": "Obtenga información relevante e imparcial sobre los candidatos que se postulan en sus elecciones no presidenciales. Lucha contra las cámaras de eco de noticias falsas y medios.",
+      "description": "In eerste instantie ontwikkeld door alleen HTML, CSS en JS met een eenvoudige look en feel; nu aangepast met ReactJS om een soepele facturering te gebruiken, evenals enkele animaties die worden geactiveerd met scrollen.",
       "icon":"https://img.icons8.com/bubbles/100/000000/man-in-blue-jacket-information.png",
       "background":""
     },
     {
       "key": 2,
-      "title": "Mantente Comprometido!",
-      "subtitle":"",
-      "link":"",
-      "description": "Muestre apoyo u oposición a los candidatos, aspirantes y sus posturas políticas. Mantenga un registro de sus candidatos favoritos y sus elecciones finales.",
+      "title": "Kea Scientific",
+      "subtitle":"Freelance PhD-wetenschapper",
+      "link":"https://www.keascientific.com",
+      "description": "Eenvoudige en snelle factureringswebsite is Engels en Frans gemaakt met ReactJS. Bent u het beu om de pagina opnieuw te zien laden bij het wijzigen van de taal van de website? Gebruikmakend van ReactJS, maakt deze pagina het veranderen van taal gemakkelijk en soepel.",
       "background":""
     },
     {
       "key": 3,
-      "title": "Enfoque de Razor en la Política",
-      "subtitle":"",
-      "link":"",
-      "description": "Vea cómo sus candidatos coinciden con usted en la postura política. Comunique sus posturas a sus candidatos y otros ciudadanos comunes que aspiran a postularse para un cargo.",
+      "title": "ElectsmartUS (Bestemmingspagina)",
+      "subtitle":"Blijf op de hoogte en betrokken bij uw verkiezingen",
+      "link":"https://www.electsmart.us/",
+      "description": "Engelse en Spaanse website ontwikkeld met ReactJS. Aanvankelijk ontwikkeld zonder codetool, heeft Milind nu de bestemmingspagina gecodeerd terwijl hij doorgaat met het coderen van de dynamische pagina van de volledige MVP.",
       "background":""
     },
     {
       "key": 4,
-      "title": "Todas las Elecciones son Importantes",
-      "subtitle":"",
-      "link":"",
-      "description": "Las elecciones en todos los niveles, federal o estatal, son importantes y gran parte del impacto tiende a ocurrir a nivel estatal y local. Es por eso que nuestro enfoque está en las elecciones no presidenciales con voto negativo.",
+      "title": "ElectsmartUS (Gearchiveerde MVP-pagina)",
+      "subtitle":"Typ het adres en ontvang uw Amerikaanse verkiezingen",
+      "link":"https://electsmart-beta.bubbleapps.io/version-test/preview",
+      "description": "Milind richtte deze non-profit startup op voor de Amerikaanse verkiezingen van 2020. Het is ontwikkeld met behulp van de no-code tool 'Bubble'. Deze website is ontworpen om MVP snel naar buiten te brengen en snel te herhalen met gebruikersfeedback. Deze site maakt gebruik van een API en een echte database waaruit het de benodigde uitgebreide hoeveelheid gegevens uit de backend haalt.",
       "background":""
     }
   ],
