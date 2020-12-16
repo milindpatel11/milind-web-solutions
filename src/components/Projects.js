@@ -1,10 +1,7 @@
 import '../css/Projects.css';
 import pic from '../img/img-1.png';
 import { useState, useEffect, useLayoutEffect, useRef } from 'react'; // gives image path
-import info from '../icons/information.png'
-import engage from '../icons/approval.png'
-import policy from '../icons/scales.png'
-import elections from '../icons/elections.png'
+
 
 const projects_title = { "EN": { "l1": "Recent", "l2":'Portfolio'},
   "NL" : { "l1": "Onze", "l2":'Portfolio'}}
@@ -17,7 +14,7 @@ const projects_data = {
       "subtitle":"Business site for Milind Patel",
       "link":"",
       "description": "Designing elegant and responsive websites for landing pages for your venture or personal website. We can develop and code site for clients who have their own design that needs to be coded from. We can also help you both design and develop the website as well.",
-      "background":info
+      "background":""
     },
     {
       "key": 2,
@@ -25,7 +22,7 @@ const projects_data = {
       "subtitle":"Freelance PhD Scientist",
       "link":"https://www.keascientific.com",
       "description": "Simple and fast billingual website is English and French made with ReactJS. Tired of seeing page reload when changing the website language? Leveraging ReactJS, this page makes changing language easy and smooth.",
-      "background":engage
+      "background":""
     },
     {
       "key": 3,
@@ -33,7 +30,7 @@ const projects_data = {
       "subtitle":"Stay informed and engaged with your elections",
       "link":"https://www.electsmart.us/",
       "description": "English and Spanish website developed using ReactJS. Initially developed with no code tool, Milind has now coded the landing page while continuing coding dynamic page of the full MVP.",
-      "background":policy
+      "background":""
     },
     {
       "key": 4,
@@ -41,7 +38,7 @@ const projects_data = {
       "subtitle":"Type address and get your US elections",
       "link":"https://electsmart-beta.bubbleapps.io/version-test/preview",
       "description": "Milind founded this non-profit startup for 2020 US elections. It was developed using no-code tool 'Bubble'. This website is designed to get MVP out there quickly and iterate fast with user feedback. This site uses API and real database from which it fetches needed extensive amount of data from backend.",
-      "background":elections
+      "background":""
     }
   ],
   "NL": [
@@ -52,7 +49,7 @@ const projects_data = {
       "link":"",
       "description": "Obtenga información relevante e imparcial sobre los candidatos que se postulan en sus elecciones no presidenciales. Lucha contra las cámaras de eco de noticias falsas y medios.",
       "icon":"https://img.icons8.com/bubbles/100/000000/man-in-blue-jacket-information.png",
-      "background":info
+      "background":""
     },
     {
       "key": 2,
@@ -60,7 +57,7 @@ const projects_data = {
       "subtitle":"",
       "link":"",
       "description": "Muestre apoyo u oposición a los candidatos, aspirantes y sus posturas políticas. Mantenga un registro de sus candidatos favoritos y sus elecciones finales.",
-      "background":engage
+      "background":""
     },
     {
       "key": 3,
@@ -68,7 +65,7 @@ const projects_data = {
       "subtitle":"",
       "link":"",
       "description": "Vea cómo sus candidatos coinciden con usted en la postura política. Comunique sus posturas a sus candidatos y otros ciudadanos comunes que aspiran a postularse para un cargo.",
-      "background":policy
+      "background":""
     },
     {
       "key": 4,
@@ -76,7 +73,7 @@ const projects_data = {
       "subtitle":"",
       "link":"",
       "description": "Las elecciones en todos los niveles, federal o estatal, son importantes y gran parte del impacto tiende a ocurrir a nivel estatal y local. Es por eso que nuestro enfoque está en las elecciones no presidenciales con voto negativo.",
-      "background":elections
+      "background":""
     }
   ],
 }
