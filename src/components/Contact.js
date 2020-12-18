@@ -1,6 +1,5 @@
 import '../css/Contact.css';
 import { useState, useEffect } from 'react';
-import pic from '../img/home.jpg'; // gives image path
 import twitter from "../icons/twitter.png";
 import insta from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
@@ -9,20 +8,10 @@ import linkedin from "../icons/linkedin.png";
 const contact_data =  {"EN" : {"l1": "Contact", "l2":"Us", "name":"Your Name:" , "email":"Your Email:", "message":"Your Message:", "bttn":"Send"} ,
    "NL" : {"l1": "Contacteer", "l2":"Ons", "name":"Uw naam:" , "email":"Jouw Email:", "message":"Jouw Bericht:", "bttn":"Sturen"}}
 
-const social_data = [ {"key":1 , "icon":twitter, "handle":'@electsmartUS', "link":'https://twitter.com/electsmartUS'} ,
-  {"key":2 , "icon": insta, "handle":'@electsmart.us', "link":'https://www.instagram.com/electsmart.us/'},
-  {"key":3 , "icon": linkedin, "handle":'@electsmartUS', "link":'https://www.linkedin.com/company/electsmart-us/'} ]
-
-function SocialItem(props) {
-  return(
-
-    <a className="social-item" href={props.link} target="_blank" rel="noopener noreferrer">
-      <div className="icon"><img src={props.icon}/></div>
-      <h3> {props.handle}</h3>
-    </a>
-  );}
-
-  const SocialItems = social_data.map(item => <SocialItem link={item.link} key={item.key} icon={item.icon} handle={item.handle}/>)
+// const social_data = [ {"key":1 , "icon":twitter, "handle":'@electsmartUS', "link":'https://twitter.com/electsmartUS'} ,
+//   {"key":2 , "icon": insta, "handle":'@electsmart.us', "link":'https://www.instagram.com/electsmart.us/'},
+//   {"key":3 , "icon": linkedin, "handle":'@electsmartUS', "link":'https://www.linkedin.com/company/electsmart-us/'} ]
+//
 
 
 

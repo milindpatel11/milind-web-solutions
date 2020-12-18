@@ -1,6 +1,6 @@
 import '../css/Home.css';
 import { useState, useEffect } from 'react';
-import pic from '../img/home.jpg'; // gives image path
+// import pic from '../img/home.jpg'; // gives image path
 const home_data =  {"EN" : {"l1": "Elegant, fast and mobile friendly sites", "l2":"for your personal and business needs", "l3":"to get your sh*t done", "bttn1":"Portfolio", "bttn2":"Services"} ,
    "NL" : {"l1": "Elegante, snelle en mobielvriendelijke sites", "l2":"voor uw persoonlijke en zakelijke behoeften", "l3":"om je sh*t gedaan te krijgen", "bttn1":"Portefeuille", "bttn2":"Diensten"}}
 

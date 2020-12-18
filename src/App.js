@@ -36,7 +36,7 @@ class App extends React.Component {
             <Services language={this.state.language} />
             <Projects language={this.state.language} />
             <Contact language={this.state.language} />
-            <Footer language={this.state.language} />
+            <Footer />
       </div>
     );
   }

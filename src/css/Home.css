@@ -170,6 +170,10 @@ background: var(--brand-main-full)
 
 @media only screen and (max-width: 700px) {
 
+  .Home {
+    background-image: url(../img/home-phone.jpg);
+  }
+
   .Home .inner-home {
     flex-direction: column;
     margin-top: 100px;

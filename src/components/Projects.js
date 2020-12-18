@@ -112,7 +112,7 @@ function ProjectItem(props) {
         <h2>{props.subtitle}</h2>
         <p>{props.description}</p>
         { props.link &&
-          <a className="project-link cta" href={props.link} target="_blank" rel="noopener noreferrer">{(props.language=="EN") ? "Visit Site" : "Bezoek de Site"}</a>
+          <a className="project-link cta" href={props.link} target="_blank" rel="noopener noreferrer">{(props.language==="EN") ? "Visit Site" : "Bezoek de Site"}</a>
         }
 
       </div>

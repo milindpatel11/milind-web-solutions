@@ -111,9 +111,9 @@ function About(props) {
         </div>
         <div className="col-right flex-column">
           <div className='skills-filter flex-row'>
-            <h5 className={(skill=="F")&&"active"} onClick={()=>setSkill("F")}>Frontend</h5>
-            <h5 className={(skill=="B")&&"active"} onClick={()=>setSkill("B")}>Backend</h5>
-            <h5 className={(skill=="S")&&"active"} onClick={()=>setSkill("S")}>{(props.language=="EN") ? "Subject-Matter" : "Onderwerp"}</h5>
+            <h5 className={(skill==="F")&&"active"} onClick={()=>setSkill("F")}>Frontend</h5>
+            <h5 className={(skill==="B")&&"active"} onClick={()=>setSkill("B")}>Backend</h5>
+            <h5 className={(skill==="S")&&"active"} onClick={()=>setSkill("S")}>{(props.language==="EN") ? "Subject-Matter" : "Onderwerp"}</h5>
           </div>
           <div className='skills' ref={skillsRef}>
             {SkillItems}

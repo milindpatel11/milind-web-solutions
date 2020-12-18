@@ -1,23 +1,23 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import pic from '../img/Logo.png';
 
-const footer_data =  {"EN" : {"l1": "Stay Informed", "l2":"Stay Engaged", "l3":"Elect Right Candidates", "bttn1":"See Preview"} ,
-   "NL" : {"l1": "Mantente Informada", "l2":"Mantente Comprometido", "l3":"Elegir Candidatos Correctos", "bttn1":"Ver Vista Previa"}}
+// const footer_data =  {"EN" : {"l1": "Stay Informed", "l2":"Stay Engaged", "l3":"Elect Right Candidates", "bttn1":"See Preview"} ,
+//    "NL" : {"l1": "Mantente Informada", "l2":"Mantente Comprometido", "l3":"Elegir Candidatos Correctos", "bttn1":"Ver Vista Previa"}}
 
 
 function Footer(props) {
 
   //  useState using props coming from the parent
 
-  const [language, setLang] = useState(props.language)
+  // const [language, setLang] = useState(props.language)
 
   // useEffect to apply / update this comp when props from parent change
 
-  useEffect (() => {
-    setLang(props.language);
-  },[props.language])
+  // useEffect (() => {
+  //   setLang(props.language);
+  // },[props.language])
 
-  const footer_filt = footer_data[language];
+  // const footer_filt = footer_data[language];
 
 
 

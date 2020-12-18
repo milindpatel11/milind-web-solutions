@@ -42,7 +42,6 @@ const services_data = {
       "key": 1,
       "title": "Eenvoudige, responsieve en elegante bestemmingspagina's",
       "description": "Ontwerpen van elegante en responsieve websites voor bestemmingspagina's voor uw onderneming of persoonlijke website. We kunnen sites ontwikkelen en coderen voor klanten die hun eigen ontwerp hebben waaruit moet worden gecodeerd. We kunnen u ook helpen bij het ontwerpen en ontwikkelen van de website.",
-      "icon":"https://img.icons8.com/bubbles/100/000000/man-in-blue-jacket-information.png",
       "icon":develop
     },
     {
@@ -95,7 +94,7 @@ function ServiceItem(props) {
   return(
 
     <div className={show ? "service-item show-animate flex-column" : "service-item flex-column"} ref={serviceRef}>
-      <div className="icon"><img src={props.icon}/></div>
+      <div className="icon"><img src={props.icon} alt="service-icon"/></div>
       <h2> {props.title}</h2>
       <p> {props.description}</p>
     </div>
