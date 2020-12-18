@@ -52,7 +52,7 @@ function Contact(props) {
       <h1 className="section-title">{contact_filt.l1} <span>{contact_filt.l2}</span></h1>
 
 
-        <div className="contact-right">
+        <div className="contact-right flex-column">
           <form className="contact-form" name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
             <p> <label> {contact_filt.name} <input type="text" name="name" /></label></p>

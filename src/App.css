@@ -14,6 +14,11 @@
   }
 } */
 
+* {
+  margin: 0;
+  font-family: Helvetica, sans-serif
+}
+
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -72,12 +77,22 @@
   position: relative;
   }
 
+.flex-row {
+  display: flex;
+  flex-direction: row
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .cta {
 	display: inline-block;
 	padding: 10px 20px;
-	color: white;
-  background-color: transparent;
+	color: black;
+  background-color: white;
   border: 2px solid var(--brand-main-full);
 	font-size: 14px;
 	letter-spacing: 1.5px;
@@ -97,8 +112,8 @@ a.disabled-btn {
 }
 
 .cta:hover {
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: transparent;
 }
 
 .section-title {

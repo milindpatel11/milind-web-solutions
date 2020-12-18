@@ -1,7 +1,6 @@
 import '../css/Projects.css';
+import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import pic from '../img/img-1.png';
-import { useState, useEffect, useLayoutEffect, useRef } from 'react'; // gives image path
-
 
 const projects_title = { "EN": { "l1": "Recent", "l2":'Portfolio'},
   "NL" : { "l1": "Recente", "l2":'Portfolio'}}
@@ -12,7 +11,7 @@ const projects_data = {
       "key": 1,
       "title": "This Website",
       "subtitle":"Business site for Milind Patel",
-      "link":"",
+      "link":null,
       "description": "Initially developed by just HTML, CSS and JS with simple look and feel; now modified using ReactJS to use smooth billingual transition as well as some animations triggering with scrolling.",
       "background":""
     },
@@ -46,7 +45,7 @@ const projects_data = {
       "key": 1,
       "title": "Deze website",
       "subtitle":"Bedrijfssite voor Milind Patel",
-      "link":"",
+      "link":null,
       "description": "In eerste instantie ontwikkeld door alleen HTML, CSS en JS met een eenvoudige look en feel; nu aangepast met ReactJS om een soepele facturering te gebruiken, evenals enkele animaties die worden geactiveerd met scrollen.",
       "icon":"https://img.icons8.com/bubbles/100/000000/man-in-blue-jacket-information.png",
       "background":""
@@ -88,11 +87,11 @@ function ProjectItem(props) {
   useLayoutEffect(() => {
     const topPos = element => element.getBoundingClientRect().top;
 
-    const heightPos = element => element.getBoundingClientRect().height;
 
    //added to reduce redundancy
     const divPos = topPos(projectRef.current);
-    console.log(divPos);
+
+    console.log("ProjectItem Logged");
 
     const onScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight;
@@ -107,12 +106,15 @@ function ProjectItem(props) {
 
   return(
 
-    <div className={show ? "project-item show-animate" : "project-item"} ref={projectRef} >
-      <div className="project-info">
+    <div className={show ? "project-item show-animate flex-column" : "project-item flex-column"} ref={projectRef} >
+      <div className="project-info flex-column">
         <h1>{props.title}</h1>
         <h2>{props.subtitle}</h2>
         <p>{props.description}</p>
-        <a class="project-link cta" href={props.link} target="_blank" rel="noopener noreferrer">Visit Site</a>
+        { props.link &&
+          <a className="project-link cta" href={props.link} target="_blank" rel="noopener noreferrer">Visit Site</a>
+        }
+
       </div>
       <div className="project-img">
         <img src={pic} alt="img"/>
@@ -137,7 +139,7 @@ function Projects(props) {
   const title_filt = projects_title[language];
   const projects_filt = projects_data[language];
 
-
+  console.log("Project Section Logged");
 
   const ProjectItems = projects_filt.map( item => <ProjectItem title={item.title} subtitle={item.subtitle} key={item.key} description={item.description} link={item.link}/>)
 
@@ -148,7 +150,7 @@ function Projects(props) {
       <div className="projects-header">
         <h1 className="section-title">{title_filt.l1} <span>{title_filt.l2}</span></h1>
       </div>
-      <div className="all-projects">
+      <div className="all-projects flex-column">
         {ProjectItems}
       </div>
 

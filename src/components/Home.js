@@ -1,7 +1,6 @@
 import '../css/Home.css';
 import { useState, useEffect } from 'react';
 import pic from '../img/home.jpg'; // gives image path
-
 const home_data =  {"EN" : {"l1": "Elegent, fast and mobile friendly sites", "l2":"for your personal and business needs", "l3":"to get your sh*t done", "bttn1":"Portfolio", "bttn2":"See CV"} ,
    "NL" : {"l1": "Mantente Informada", "l2":"Mantente Comprometido", "l3":"Elegir Candidatos Correctos", "bttn1":"NL-Portfolio", "bttn2":"NL-See CV"}}
 
@@ -37,7 +36,7 @@ function Home(props) {
 
     <div className="Home container"  id='Home'>
 
-        <div className="intro">
+        <div className="intro flex-column">
           <h1>{home_filt.l1}<span></span></h1>
           <h1>{home_filt.l2}<span></span></h1>
           <h1>{home_filt.l3}<span></span></h1>

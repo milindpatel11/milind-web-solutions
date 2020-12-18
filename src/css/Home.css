@@ -31,13 +31,11 @@
 } */
 
 .Home .intro {
-  display: none;
-  flex-direction: column;
   /* background-color: var(--brand-main-ten); */
   padding: 20px;
   border-radius: 10px;
   margin: auto 20px;
-  width: 70%;
+  width: 90%;
 }
 
 /* .Home .subscribe {
@@ -97,7 +95,7 @@
 .Home h1 {
   display: block;
   width: fit-content;
-  font-size: 40px;
+  font-size: 35px;
   position: relative;
   color: transparent;
   animation: text_reveal .5s ease forwards;
@@ -114,6 +112,7 @@
 .Home h1:nth-child(3) {
   animation: text_reveal_name .5s ease forwards;
   animation-delay: 3s;
+  text-transform: uppercase;
 }
 .Home h1 span {
   position: absolute;
@@ -160,8 +159,11 @@ color: white;
 }
 @keyframes text_reveal_name {
 100% {
-color: #1367E9;
-font-weight: 500;
+/* color: #1367E9; */
+color:white;
+font-weight: 700;
+padding: 5px;
+background: var(--brand-main-full)
 	}
 }
 
@@ -176,6 +178,10 @@ font-weight: 500;
   .Home .inner-home .intro{
     width: 85%;
     /* max-width: 400px */
+  }
+
+  .Home h1 {
+    font-size: 20px;
   }
 
   /* .Home .inner-home .subscribe{

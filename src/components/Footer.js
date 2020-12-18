@@ -37,7 +37,7 @@ function Footer(props) {
       <p className='copy'>Copyright © 2020 Milind Patel. All rights reserved.</p>
 
       <div className='thanks'>
-        <p> Thanks to <a href="https://icons8.com" target="_blank" rel="noopener noreferrer" > https://icons8.com </a> for Icons in Resources Section  </p>
+        <p> Thanks to <a href="https://www.iconpacks.net" target="_blank" rel="noopener noreferrer" > https://www.iconpacks.net </a> for Icons.</p>
       </div>
     </div>
 
