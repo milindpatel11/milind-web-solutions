@@ -87,7 +87,7 @@
 	transition: .3s ease transform;
 }
 .Projects .project-item:hover .project-img img {
-	transform: scale(0.9);
+	transform: scale(1.1);
 	/* border-radius: 20px; */
 }
 

@@ -1,6 +1,12 @@
 import '../css/Projects.css';
 import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import pic from '../img/img-1.png';
+import milind from '../img/milind.jpeg';
+import kea from '../img/kea.jpeg';
+import electsmart from '../img/electsmart.jpeg';
+import electsmartbeta from '../img/electsmart-beta.jpeg';
+
+
 
 const projects_title = { "EN": { "l1": "Recent", "l2":'Portfolio'},
   "NL" : { "l1": "Recente", "l2":'Portfolio'}}
@@ -13,7 +19,7 @@ const projects_data = {
       "subtitle":"Business site for Milind Patel",
       "link":null,
       "description": "Initially developed by just HTML, CSS and JS with simple look and feel; now modified using ReactJS to use smooth billingual transition as well as some animations triggering with scrolling.",
-      "background":""
+      "background":milind
     },
     {
       "key": 2,
@@ -21,7 +27,7 @@ const projects_data = {
       "subtitle":"Freelance PhD Scientist",
       "link":"https://www.keascientific.com",
       "description": "Simple and fast billingual website is English and French made with ReactJS. Tired of seeing page reload when changing the website language? Leveraging ReactJS, this page makes changing language easy and smooth.",
-      "background":""
+      "background":kea
     },
     {
       "key": 3,
@@ -29,7 +35,7 @@ const projects_data = {
       "subtitle":"Stay informed and engaged with your elections",
       "link":"https://www.electsmart.us/",
       "description": "English and Spanish website developed using ReactJS. Initially developed with no code tool, Milind has now coded the landing page while continuing coding dynamic page of the full MVP.",
-      "background":""
+      "background":electsmart
     },
     {
       "key": 4,
@@ -37,7 +43,7 @@ const projects_data = {
       "subtitle":"Type address and get your US elections",
       "link":"https://electsmart-beta.bubbleapps.io/version-test/preview",
       "description": "Milind founded this non-profit startup for 2020 US elections. It was developed using no-code tool 'Bubble'. This website is designed to get MVP out there quickly and iterate fast with user feedback. This site uses API and real database from which it fetches needed extensive amount of data from backend.",
-      "background":""
+      "background":electsmartbeta
     }
   ],
   "NL": [
@@ -48,7 +54,7 @@ const projects_data = {
       "link":null,
       "description": "In eerste instantie ontwikkeld door alleen HTML, CSS en JS met een eenvoudige look en feel; nu aangepast met ReactJS om een soepele facturering te gebruiken, evenals enkele animaties die worden geactiveerd met scrollen.",
       "icon":"https://img.icons8.com/bubbles/100/000000/man-in-blue-jacket-information.png",
-      "background":""
+      "background":milind
     },
     {
       "key": 2,
@@ -56,7 +62,7 @@ const projects_data = {
       "subtitle":"Freelance PhD-wetenschapper",
       "link":"https://www.keascientific.com",
       "description": "Eenvoudige en snelle factureringswebsite is Engels en Frans gemaakt met ReactJS. Bent u het beu om de pagina opnieuw te zien laden bij het wijzigen van de taal van de website? Gebruikmakend van ReactJS, maakt deze pagina het veranderen van taal gemakkelijk en soepel.",
-      "background":""
+      "background":kea
     },
     {
       "key": 3,
@@ -64,7 +70,7 @@ const projects_data = {
       "subtitle":"Blijf op de hoogte en betrokken bij uw verkiezingen",
       "link":"https://www.electsmart.us/",
       "description": "Engelse en Spaanse website ontwikkeld met ReactJS. Aanvankelijk ontwikkeld zonder codetool, heeft Milind nu de bestemmingspagina gecodeerd terwijl hij doorgaat met het coderen van de dynamische pagina van de volledige MVP.",
-      "background":""
+      "background":electsmart
     },
     {
       "key": 4,
@@ -72,7 +78,7 @@ const projects_data = {
       "subtitle":"Typ het adres en ontvang uw Amerikaanse verkiezingen",
       "link":"https://electsmart-beta.bubbleapps.io/version-test/preview",
       "description": "Milind richtte deze non-profit startup op voor de Amerikaanse verkiezingen van 2020. Het is ontwikkeld met behulp van de no-code tool 'Bubble'. Deze website is ontworpen om MVP snel naar buiten te brengen en snel te herhalen met gebruikersfeedback. Deze site maakt gebruik van een API en een echte database waaruit het de benodigde uitgebreide hoeveelheid gegevens uit de backend haalt.",
-      "background":""
+      "background":electsmartbeta
     }
   ],
 }
@@ -117,7 +123,7 @@ function ProjectItem(props) {
 
       </div>
       <div className="project-img">
-        <img src={pic} alt="img"/>
+        <img src={props.pic} alt="img"/>
       </div>
     </div>
 
@@ -141,7 +147,7 @@ function Projects(props) {
 
   console.log("Project Section Logged");
 
-  const ProjectItems = projects_filt.map( item => <ProjectItem title={item.title} subtitle={item.subtitle} key={item.key} description={item.description} link={item.link} language={language}/>)
+  const ProjectItems = projects_filt.map( item => <ProjectItem title={item.title} subtitle={item.subtitle} key={item.key} description={item.description} link={item.link} language={language} pic={item.background}/>)
 
 
   return (
