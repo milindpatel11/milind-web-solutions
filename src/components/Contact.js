@@ -6,8 +6,8 @@ import insta from "../icons/instagram.png";
 import linkedin from "../icons/linkedin.png";
 
 
-const contact_data =  {"EN" : {"l1": "Contact", "l2":"Us", "l3":"Our Social Media", "l4":"Please like and follow our Social Media and help spread the word!", "name":"Your Name:" , "email":"Your Email:", "message":"Your Message:", "bttn":"Send", "gmail":"Email:"} ,
-   "NL" : {"l1": "Contacta con", "l2":"Nosotros", "l3":"Nuestras Redes Sociales", "l4":"¡Dale me gusta y sigue nuestras redes sociales y ayuda a correr la voz!",  "name":"Tu Nombre:" , "email":"Tu Correo Electrónico:", "message":"Tu Mensaje:", "bttn":"Enviar", "gmail":"Correo Electrónico:"}}
+const contact_data =  {"EN" : {"l1": "Contact", "l2":"Us", "name":"Your Name:" , "email":"Your Email:", "message":"Your Message:", "bttn":"Send"} ,
+   "NL" : {"l1": "Contacteer", "l2":"Ons", "name":"Uw naam:" , "email":"Jouw Email:", "message":"Jouw Bericht:", "bttn":"Sturen"}}
 
 const social_data = [ {"key":1 , "icon":twitter, "handle":'@electsmartUS', "link":'https://twitter.com/electsmartUS'} ,
   {"key":2 , "icon": insta, "handle":'@electsmart.us', "link":'https://www.instagram.com/electsmart.us/'},

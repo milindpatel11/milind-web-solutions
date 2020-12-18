@@ -29,7 +29,7 @@ function Header(props) {
   },[props.language])
 
 
-  const header_data =  {"NL" : {"l1": "Inicio", "l2":"Sobre", "l3":"Recursos", "l4":"Portafolio", "l5":"Contacto"} ,
+  const header_data =  {"NL" : {"l1": "Begin", "l2":"Over", "l3":"Diensten", "l4":"Portefeuille", "l5":"Contact"} ,
    "EN" : {"l1": "Home", "l2":"About", "l3":"Services",  "l4":"Portfolio", "l5":"Contact"}}
 
   const header_filt = header_data[language]
@@ -61,9 +61,9 @@ function Header(props) {
             </a>
           </div>
 
-          <select value={props.language} disabled={true} onChange={e => props.changeLang(e.target.value)}>
+          <select value={props.language} disabled={false} onChange={e => props.changeLang(e.target.value)}>
           <option value="EN">English</option>
-          <option value="NL">Nederlands</option>
+          <option value="NL">Nederlands (beta)</option>
           </select>
 
           <div className="nav-list">

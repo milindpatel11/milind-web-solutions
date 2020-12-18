@@ -7,8 +7,8 @@ import finance from '../icons/finance.png';
 
 
 
-const service_title = { "EN": { "l1": "Our", "l2":'Services', "l3":"Fight fake news and media echo chambers by getting unbiased and relevant information on candidates running in your elections. Stay engaged by showing support/opposition for candidates and aspirants, and engaging in activism and running for office."},
-  "NL" : { "l1": "Onze", "l2":'Services', "l3":"Uche contra las cámaras de eco de noticias y medios falsos obteniendo información imparcial y relevante sobre los candidatos que se presentan a sus elecciones. Manténgase comprometido mostrando apoyo / oposición a los candidatos y aspirantes, y participe en el activismo y se postule para un cargo."}}
+const service_title = { "EN": { "l1": "Our", "l2":'Services', "l3":"Reach out to Milind for following: simple and elegant personal or company landing websites; Launch MVP or beta with database and design; Lean Startup methodologies; Business and Finance For Startups."},
+  "NL" : { "l1": "Onze", "l2":'Diensten', "l3":"Neem contact op met Milind voor het volgende: eenvoudige en elegante persoonlijke of bedrijfslandingswebsites; Start MVP of bèta met database en ontwerp; Lean Startup-methodologieën; Bedrijven en financiën voor startups."}}
 
 const services_data = {
   "EN": [
@@ -21,7 +21,7 @@ const services_data = {
     {
       "key": 2,
       "title": "Launching MVP and Beta",
-      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Buuble and more. These tools are effecient way to launch MVP (database and design) quickly and iterate according to user feedback.",
+      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback.",
       "icon":launch
     },
     {
@@ -33,34 +33,34 @@ const services_data = {
     {
       "key": 4,
       "title": "Business and Finance",
-      "description": "Milind has helped startups with investor pitches, financials, valuations, market research and many business aspects impacting early stage ventures.",
+      "description": "Milind has helped startups with investor pitches, financials, valuations, market research and many other business aspects impacting early stage ventures such as digital marketing, operations and analytics.",
       "icon":finance
     }
   ],
   "NL": [
     {
       "key": 1,
-      "title": "",
-      "description": "Obtenga información relevante e imparcial sobre los candidatos que se postulan en sus elecciones no presidenciales. Lucha contra las cámaras de eco de noticias falsas y medios.",
+      "title": "Eenvoudige, responsieve en elegante bestemmingspagina's",
+      "description": "Ontwerpen van elegante en responsieve websites voor bestemmingspagina's voor uw onderneming of persoonlijke website. We kunnen sites ontwikkelen en coderen voor klanten die hun eigen ontwerp hebben waaruit moet worden gecodeerd. We kunnen u ook helpen bij het ontwerpen en ontwikkelen van de website.",
       "icon":"https://img.icons8.com/bubbles/100/000000/man-in-blue-jacket-information.png",
       "icon":develop
     },
     {
       "key": 2,
-      "title": "Mantente Comprometido!",
-      "description": "Muestre apoyo u oposición a los candidatos, aspirantes y sus posturas políticas. Mantenga un registro de sus candidatos favoritos y sus elecciones finales.",
+      "title": "MVP en bèta starten",
+      "description": "Start uw MVP of bèta met snelle platforms zonder code, zoals Webflow, Bubble en meer. Deze tools zijn een efficiënte manier om MVP (database en ontwerp) snel te starten en te herhalen op basis van gebruikersfeedback.",
       "icon":launch
     },
     {
       "key": 3,
-      "title": "Enfoque de Razor en la Política",
-      "description": "Vea cómo sus candidatos coinciden con usted en la postura política. Comunique sus posturas a sus candidatos y otros ciudadanos comunes que aspiran a postularse para un cargo.",
+      "title": "Lean Startup-methodologieën",
+      "description": "Snelle lancering van MVP en bèta, snel herhalend over fetures naarmate gebruikersfeedback komt en experimenteert met verschillende stijlen en berichten (A / B-testen). Milind brengt ervaring mee van meerdere startups in een vroeg stadium, waaronder een zeer vroege e-commerce startup waar we gestroomlijnde praktijken gebruikten om iteratie te behouden.",
       "icon":lean
     },
     {
       "key": 4,
-      "title": "Todas las Elecciones son Importantes",
-      "description": "Las elecciones en todos los niveles, federal o estatal, son importantes y gran parte del impacto tiende a ocurrir a nivel estatal y local. Es por eso que nuestro enfoque está en las elecciones no presidenciales con voto negativo.",
+      "title": "Zaken en financiën",
+      "description": "Milind heeft startups geholpen met presentaties van investeerders, financiële gegevens, waarderingen, marktonderzoek en vele andere zakelijke aspecten die van invloed zijn op vroege ondernemingen, zoals digitale marketing, operations en analytics",
       "icon":finance
     }
   ],
