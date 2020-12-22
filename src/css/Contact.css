@@ -1,9 +1,9 @@
 .Contact {
-  background-image: url(../img/home.jpg);
+  /* background-image: url(../img/home.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  z-index: 1;
+  z-index: 1; */
   max-width: 100vw;
   justify-content: center;
   flex-direction: column;
@@ -169,7 +169,7 @@
   width: 150px;
   height: 40px;
   padding: 7px; /*  adds px padding to all sides of the button */
-  background: var(--brand-bright); /* gives the button a background color */
+  background: var(--brand-bright-full); /* gives the button a background color */
   color: white; /* changes the text color of the button to white */
   border-radius: 20px; /* curves the edges of the button by 4px */
   cursor: pointer; /* changes the mouse pointer when you hover over the button */

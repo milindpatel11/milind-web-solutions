@@ -7,21 +7,21 @@ import finance from '../icons/finance.png';
 
 
 
-const service_title = { "EN": { "l1": "Our", "l2":'Services', "l3":"Reach out to Milind for following: simple and elegant personal or company landing websites; Launch MVP or beta with database and design; Lean Startup methodologies; Business and Finance For Startups."},
-  "NL" : { "l1": "Onze", "l2":'Diensten', "l3":"Neem contact op met Milind voor het volgende: eenvoudige en elegante persoonlijke of bedrijfslandingswebsites; Start MVP of bèta met database en ontwerp; Lean Startup-methodologieën; Bedrijven en financiën voor startups."}}
+const service_title = { "EN": { "l1": "My", "l2":'Services', "l3":"Reach out to Milind for following: simple and elegant personal or company landing websites; Launch MVP or beta with database and design; Lean Startup methodologies; Business and Finance For Startups."},
+  "NL" : { "l1": "Mijn", "l2":'Diensten', "l3":"Neem contact op met Milind voor het volgende: eenvoudige en elegante persoonlijke of bedrijfslandingswebsites; Start MVP of bèta met database en ontwerp; Lean Startup-methodologieën; Bedrijven en financiën voor startups."}}
 
 const services_data = {
   "EN": [
     {
       "key": 1,
       "title": "Simple, Responsive and Elegant Landing Pages",
-      "description": "Designing elegant and responsive websites for landing pages for your venture or personal website. We can develop and code site for clients who have their own design that needs to be coded from. We can also help you both design and develop the website as well.",
+      "description": "Designing elegant, fast and mobile friendly websites for landing pages for your venture or personal website. We can develop and code site for clients who have their own design that needs to be coded from. We can also help you both design and develop the website as well.",
       "icon":develop
     },
     {
       "key": 2,
       "title": "Launching MVP and Beta",
-      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback.",
+      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback. If you prefer traditional code based development, we can also help develop, launch and iterate quickly based using server-less backend approaches such as Google Firebase that make launching and iterating faster and easier. ",
       "icon":launch
     },
     {
@@ -33,7 +33,7 @@ const services_data = {
     {
       "key": 4,
       "title": "Business and Finance",
-      "description": "Milind has helped startups with investor pitches, financials, valuations, market research and many other business aspects impacting early stage ventures such as digital marketing, operations and analytics.",
+      "description": "Milind has helped startups with investor pitches, financials, valuations, market research and many other business aspects impacting early stage ventures such as digital marketing, operations, finance, fundraising and analytics.",
       "icon":finance
     }
   ],
@@ -41,13 +41,13 @@ const services_data = {
     {
       "key": 1,
       "title": "Eenvoudige, responsieve en elegante bestemmingspagina's",
-      "description": "Ontwerpen van elegante en responsieve websites voor bestemmingspagina's voor uw onderneming of persoonlijke website. We kunnen sites ontwikkelen en coderen voor klanten die hun eigen ontwerp hebben waaruit moet worden gecodeerd. We kunnen u ook helpen bij het ontwerpen en ontwikkelen van de website.",
+      "description": "Ontwerp elegante, snelle en mobielvriendelijke websites voor landingspagina's voor uw onderneming of persoonlijke website. We kunnen sites ontwikkelen en coderen voor klanten die hun eigen ontwerp hebben waaruit moet worden gecodeerd. We kunnen u ook helpen bij het ontwerpen en ontwikkelen van de website.",
       "icon":develop
     },
     {
       "key": 2,
       "title": "MVP en bèta starten",
-      "description": "Start uw MVP of bèta met snelle platforms zonder code, zoals Webflow, Bubble en meer. Deze tools zijn een efficiënte manier om MVP (database en ontwerp) snel te starten en te herhalen op basis van gebruikersfeedback.",
+      "description": "Start uw MVP of Beta met snelle platforms zonder code, zoals Webflow, Bubble en meer. Deze tools zijn een efficiënte manier om MVP (database en ontwerp) snel te starten en te herhalen op basis van gebruikersfeedback. Als u de voorkeur geeft aan traditionele op code gebaseerde ontwikkeling, kunnen we u ook helpen bij het snel ontwikkelen, lanceren en itereren met behulp van serverloze back-endbenaderingen zoals Google Firebase die het starten en itereren sneller en gemakkelijker maken.",
       "icon":launch
     },
     {
@@ -59,7 +59,7 @@ const services_data = {
     {
       "key": 4,
       "title": "Zaken en financiën",
-      "description": "Milind heeft startups geholpen met presentaties van investeerders, financiële gegevens, waarderingen, marktonderzoek en vele andere zakelijke aspecten die van invloed zijn op vroege ondernemingen, zoals digitale marketing, operations en analytics",
+      "description": "Milind heeft startups geholpen met presentaties voor investeerders, financiële gegevens, waarderingen, marktonderzoek en vele andere zakelijke aspecten die van invloed zijn op vroege ondernemingen, zoals digitale marketing, bedrijfsvoering, financiën, fondsenwerving en analyse.",
       "icon":finance
     }
   ],
@@ -96,7 +96,7 @@ function ServiceItem(props) {
     <div className={show ? "service-item show-animate flex-column" : "service-item flex-column"} ref={serviceRef}>
       <div className="icon"><img src={props.icon} alt="service-icon"/></div>
       <h2> {props.title}</h2>
-      <p> {props.description}</p>
+      <p className="para"> {props.description}</p>
     </div>
 
 );}
@@ -129,7 +129,7 @@ function Services(props) {
     <div className="Services container" id="Services-ID" >
       <div className="service-top">
         <h1 className="section-title">{title_filt.l1} <span>{title_filt.l2}</span></h1>
-        <p>{title_filt.l3}</p>
+        <p className="para">{title_filt.l3}</p>
       </div>
       <div className="service-bottom">
          {ServiceItems}

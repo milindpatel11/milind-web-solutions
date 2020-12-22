@@ -3,12 +3,12 @@ import { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import profile from '../img/profile.png';
 // import pic from '../img/about-img.jpg'; // gives image path
 
-const about_data =  {"EN" : {"l1": "About", "l2":"Milind", "l3":"Physician, Business Professional, and aspiring Programmer", "l4":"Milind is a Physician from India with an MBA in the US. While in the business school, he gradually started learning data science and computer science. During his MBA in the US, he worked at a health insurance company on procurement and finance. After MBA, he worked with two early stage startups (e-commerce and diagnostic device) helping them with most business aspects of starting a venture. These include finance, research, operations and logistics, customer service, data analysis, SEO/SEM, lean methodologies, fundraising, marketing and strategy. Milind has been web development online for the last two years and this website is to demonstrate some of the work on web development for freelancing and employment purposes in web development and launching MVP for startups.", "bttn":"See LinkedIn"} ,
-   "NL" : {"l1": "Over", "l2":"Milind", "l3":"Arts, Business Professional en aspirant-programmeur", "l4": "NL - Milind is a Physician from India with an MBA in the US. While in the business school, he gradually started learning data science and computer science. During his MBA in the US, he worked at a health insurance company on procurement and finance. After MBA, he worked with two early stage startups (e-commerce and diagnostic device) helping them with most business aspects of starting a venture. These include finance, research, operations and logistics, customer service, data analysis, SEO/SEM, lean methodologies, fundraising, marketing and strategy. Milind has been web development online for the last two years and this website is to demonstrate some of the work on web development for freelancing and employment purposes in web development and launching MVP for startups.", "bttn":"Zie LinkedIn"}}
+const about_data =  {"EN" : {"l1": "About", "l2":"Milind", "l3":"Physician, Business Professional, and Aspiring Programmer", "l4":"Milind is a Physician from India with an MBA in the US. While in the business school, he gradually started learning data science and computer science. During his MBA, he worked at a health insurance company on procurement and finance. After MBA, he worked with two early stage startups (e-commerce and diagnostic device) helping them with most business aspects of starting a venture including finance, research, operations and logistics, customer service, data analysis, SEO/SEM, lean methodologies, fundraising, marketing and strategy. This website is to demonstrate learning and work on web development from last few months for freelancing and employment purposes in web development and launching MVP for startups.", "bttn":"See LinkedIn"} ,
+   "NL" : {"l1": "Over", "l2":"Milind", "l3":"Arts, Business Professional en Aspirant-Programmeur", "l4": "Milind is een arts uit India met een MBA in de VS. Terwijl hij op de business school zat, begon hij geleidelijk aan datawetenschap en informatica te leren. Tijdens zijn MBA werkte hij bij een zorgverzekeraar op het gebied van inkoop en financiën. Na zijn MBA werkte hij met twee beginnende startups (e-commerce en diagnoseapparatuur) om hen te helpen met de meeste zakelijke aspecten van het starten van een onderneming, waaronder financiën, onderzoek, operations en logistiek, klantenservice, data-analyse, SEO / SEM, gestroomlijnde methodologieën, fondsenwerving, marketing en strategie. Deze website is bedoeld om het leren en werken aan webontwikkeling van de afgelopen maanden te demonstreren voor freelancen en werkgelegenheidsdoeleinden in webontwikkeling en het lanceren van MVP voor startups.", "bttn":"Zie LinkedIn"}}
 
-const skills = { "F": [ {"key":1 , "name":"HTML", "percentage":'90%'} ,
+const skills = { "F": [ {"key":1 , "name":"HTML", "percentage":'80%'} ,
   {"key":2 , "name":"CSS", "percentage":'80%'},
-  {"key":3 , "name":"ReactJS", "percentage":'70%'},
+  {"key":3 , "name":"ReactJS", "percentage":'65%'},
   {"key":4 , "name":"React-Native", "percentage":'50%'},
   {"key":5 , "name":"AngularJS", "percentage":'30%'},
   {"key":6 , "name":"Bootstrap", "percentage":'40%'},
@@ -16,9 +16,17 @@ const skills = { "F": [ {"key":1 , "name":"HTML", "percentage":'90%'} ,
 ],
 "B": [ {"key":1 , "name":"Firebase", "percentage":'40%'} ,
   {"key":2 , "name":"MongoDB", "percentage":'20%'},
-  {"key":3 , "name":"NodeJS", "percentage":'20%'},
-  {"key":4 , "name":"Python", "percentage":'30%'},
+  {"key":3 , "name":"NodeJS", "percentage":'25%'},
+  {"key":4 , "name":"Python", "percentage":'25%'},
   {"key":5 , "name":"Java", "percentage":'10%'},
+],
+"T": [ {"key":1 , "name":"Figma", "percentage":'50%'} ,
+  {"key":2 , "name":"Framer", "percentage":'50%'},
+  {"key":3 , "name":"Bubble", "percentage":'80%'},
+  {"key":4 , "name":"Webflow", "percentage":'35%'},
+  {"key":5 , "name":"Git/GitHub", "percentage":'50%'},
+  {"key":6 , "name":"NPM", "percentage":'40%'},
+  {"key":7 , "name":"Git/GitHub", "percentage":'50%'},
 ],
 "S": [ {"key":1 , "name":"Finance", "percentage":'80%'} ,
   {"key":2 , "name":"SEO/SEM", "percentage":'70%'},
@@ -107,12 +115,13 @@ function About(props) {
         <h2>{about_filt.l3}</h2>
       <div className = 'about-inner flex-column'>
         <div className="col-left">
-          <p>{about_filt.l4}</p>
+          <p className="para">{about_filt.l4}</p>
         </div>
         <div className="col-right flex-column">
           <div className='skills-filter flex-row'>
             <h5 className={(skill==="F")&&"active"} onClick={()=>setSkill("F")}>Frontend</h5>
             <h5 className={(skill==="B")&&"active"} onClick={()=>setSkill("B")}>Backend</h5>
+            <h5 className={(skill==="T")&&"active"} onClick={()=>setSkill("T")}>Tools</h5>
             <h5 className={(skill==="S")&&"active"} onClick={()=>setSkill("S")}>{(props.language==="EN") ? "Subject-Matter" : "Onderwerp"}</h5>
           </div>
           <div className='skills' ref={skillsRef}>

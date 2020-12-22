@@ -36,7 +36,7 @@ function Contact(props) {
 
   return (
 
-    <div className="Contact container"  id='About-ID'>
+    <div className="Contact container background-image"  id='About-ID'>
 
       <h1 className="section-title">{contact_filt.l1} <span>{contact_filt.l2}</span></h1>
 
@@ -44,10 +44,10 @@ function Contact(props) {
         <div className="contact-right flex-column">
           <form className="contact-form" name="contact" method="POST">
             <input type="hidden" name="form-name" value="contact" />
-            <p> <label> {contact_filt.name} <input type="text" name="name" /></label></p>
-            <p> <label> {contact_filt.email} <input type="email" name="email" /></label></p>
-            <p><label>{contact_filt.message} <textarea name="message"></textarea></label> </p>
-            <p><button type="submit">{contact_filt.bttn}</button></p>
+            <p className="para"> <label> {contact_filt.name} <input type="text" name="name" /></label></p>
+            <p className="para"> <label> {contact_filt.email} <input type="email" name="email" /></label></p>
+            <p className="para"><label>{contact_filt.message} <textarea name="message"></textarea></label> </p>
+            <p className="para"><button type="submit">{contact_filt.bttn}</button></p>
           </form>
         </div>
 

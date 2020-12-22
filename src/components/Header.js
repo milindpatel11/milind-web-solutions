@@ -13,7 +13,7 @@ function Header(props) {
   const [headerColor, setHeaderColor] = useState(false);
 
   const listenScrollEvent = e => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
       setHeaderColor(true)
     } else {
       setHeaderColor(false)

@@ -26,7 +26,7 @@ const projects_data = {
       "title": "Kea Scientific",
       "subtitle":"Freelance PhD Scientist",
       "link":"https://www.keascientific.com",
-      "description": "Simple and fast billingual website is English and French made with ReactJS. Tired of seeing page reload when changing the website language? Leveraging ReactJS, this page makes changing language easy and smooth.",
+      "description": "Simple and fast billingual website is English and French made with ReactJS. Tired of seeing page reload when changing the website language? Leveraging ReactJS, this page makes changing language easy and smooth.  Minimalistic and light themes design was provided by client in form of Powerpoint and was developed by us to efficiently display relevant information on services and projects.",
       "background":kea
     },
     {
@@ -61,7 +61,7 @@ const projects_data = {
       "title": "Kea Scientific",
       "subtitle":"Freelance PhD-wetenschapper",
       "link":"https://www.keascientific.com",
-      "description": "Eenvoudige en snelle factureringswebsite is Engels en Frans gemaakt met ReactJS. Bent u het beu om de pagina opnieuw te zien laden bij het wijzigen van de taal van de website? Gebruikmakend van ReactJS, maakt deze pagina het veranderen van taal gemakkelijk en soepel.",
+      "description": "Eenvoudige en snelle factureringswebsite is Engels en Frans gemaakt met ReactJS. Bent u het beu om de pagina opnieuw te zien laden bij het wijzigen van de taal van de website? Gebruikmakend van ReactJS, maakt deze pagina het veranderen van taal gemakkelijk en soepel. Minimalistisch en licht themaontwerp werd door de klant geleverd in de vorm van Powerpoint en is door ons ontwikkeld om op efficiënte wijze relevante informatie over diensten en projecten weer te geven.",
       "background":kea
     },
     {
@@ -112,17 +112,17 @@ function ProjectItem(props) {
 
   return(
 
-    <div className={show ? "project-item show-animate flex-column" : "project-item flex-column"} ref={projectRef} >
+    <div className={show ? "project-item show-animate flex-column" : "project-item flex-column"}>
       <div className="project-info flex-column">
-        <h1>{props.title}</h1>
+        <h1 >{props.title}</h1>
         <h2>{props.subtitle}</h2>
-        <p>{props.description}</p>
+        <p className="para">{props.description}</p>
         { props.link &&
           <a className="project-link cta" href={props.link} target="_blank" rel="noopener noreferrer">{(props.language==="EN") ? "Visit Site" : "Bezoek de Site"}</a>
         }
 
       </div>
-      <div className="project-img">
+      <div className="project-img" ref={projectRef}>
         <img src={props.pic} alt="img"/>
       </div>
     </div>
@@ -158,6 +158,11 @@ function Projects(props) {
       </div>
       <div className="all-projects flex-column">
         {ProjectItems}
+      </div>
+      <div className="upcoming-project flex-column">
+        <h3> What's Cooking Next <h2> 🧑🏽‍🍳 </h2> </h3>
+        <h3> ElectsmartUS coded MVP Wesbite hosted on Firebase with Login (ReactJs + NodeJS/Express)</h3>
+        <h3> ElectsmartUS coded MVP Mobile App hosted on Firebase with Login (React-Native + NodeJS/Express)</h3>
       </div>
 
       <div className='dummy-div' id="Contact"> </div>

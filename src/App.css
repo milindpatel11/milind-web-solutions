@@ -53,7 +53,8 @@
   --brand-main-ten:rgba(15, 83, 186, 0.1);
   --brand-main-five:rgba(15, 83, 186, 0.05);
   --brand-light:rgba(58,178,206, 0.05);  /*change this*/
-  --brand-bright: rgb(186, 119, 15);
+  --brand-bright-full: rgb(186, 119, 15);
+  --brand-bright-seventy: rgb(186, 119, 15, 0.7);
   --brand-bright-fty: rgb(186, 119, 15, 0.5);
   --brand-bright-twf: rgb(186, 119, 15, 0.25);
   --brand-bright-ten: rgba(186, 119, 15, 0.1);
@@ -125,8 +126,27 @@ a.disabled-btn {
 	letter-spacing: 1.5px;
 	text-align: center;
 }
+
 .section-title span {
 	color: var(--brand-main-full);
+}
+
+.background-image {
+  background-image: url("./img/home.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  z-index: 1;
+  min-height: 80vh;
+  max-width: 100vw;
+}
+
+.para{
+  margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+  font-size: 14px
 }
 
 
@@ -160,7 +180,7 @@ a.disabled-btn {
 }
 
 .Footer .brand{
-  max-width: 120px;
+  width: 120px;
   margin: 15px auto
 }
 
@@ -197,6 +217,16 @@ a.disabled-btn {
 /* End header */
 }
 
+@media only screen and (max-width: 600px) {
+
+  .para {
+    font-size: 12px
+  }
+
+
+/* End header */
+}
+
 body{
   /* overflow-y: hidden; */
 }
@@ -219,10 +249,10 @@ img {
 }
 
 p {
-	color: black;
-	font-size: 1.4rem;
+	/* color: black; */
+	/* font-size: 1.4rem;
 	margin-top: 5px;
-	line-height: 2.5rem;
-	font-weight: 300;
-	letter-spacing: .05rem;
+	line-height: 1.5;
+	font-weight: 300; */
+	/* letter-spacing: .05rem; */
 }

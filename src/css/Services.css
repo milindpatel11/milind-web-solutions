@@ -45,7 +45,7 @@
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(80deg, #485563 0%, #5D6E81 100%);
 	opacity: .9;
 	z-index: -1;
 }
