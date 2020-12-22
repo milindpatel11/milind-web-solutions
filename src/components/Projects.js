@@ -160,7 +160,7 @@ function Projects(props) {
         {ProjectItems}
       </div>
       <div className="upcoming-project flex-column">
-        <h3> What's Cooking Next <h2> 🧑🏽‍🍳 </h2> </h3>
+        <h3 className='flex-row'> What's Cooking Next <h2>  ‍🍳 </h2> </h3>
         <h3> ElectsmartUS coded MVP Wesbite hosted on Firebase with Login (ReactJs + NodeJS/Express)</h3>
         <h3> ElectsmartUS coded MVP Mobile App hosted on Firebase with Login (React-Native + NodeJS/Express)</h3>
       </div>
