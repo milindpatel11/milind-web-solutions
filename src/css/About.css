@@ -37,13 +37,12 @@
   justify-content: space-between;
   width: 95%;
   height: 100%;
-  align-items: stretch;
 }
 
 .About .col-left {
   width: 85%;
   text-align: left;
-  padding-left: 20px
+  /* padding-left: 20px */
   /* height: 250px; */
 }
 
@@ -53,7 +52,7 @@
 }
 
 .About .col-right {
-	width: 95%;
+	width: 85%;
 	text-align: left;
 	margin-right: 10px;
   padding: 0 10px;
@@ -173,7 +172,7 @@
 	.About .col-left {
 		/* margin-left: 60px; */
     padding-left: 10px;
-    width: 50%;
+    width: 55%;
 	}
 	/* .About .about .col-left .about-img::after {
 		left: -45px;
@@ -187,7 +186,7 @@
 		text-align: left;
 		margin-right: 10px;
     padding: 0 10px;
-    width: 50%;
+    width: 45%;
 	}
 
   .skills-filter h5{
