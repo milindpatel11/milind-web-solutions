@@ -168,11 +168,8 @@ background: var(--brand-main-full)
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 401px) and (max-width: 700px) {
 
-  .Home {
-    background-image: url(../img/home-phone.jpg);
-  }
 
   .Home .inner-home {
     flex-direction: column;
@@ -185,7 +182,7 @@ background: var(--brand-main-full)
   }
 
   .Home h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   /* .Home .inner-home .subscribe{
@@ -195,4 +192,27 @@ background: var(--brand-main-full)
   } */
 
 /* End header */
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .Home .intro{
+    margin-top: 40px
+  }
+
+  .Home h1 {
+      font-size: 20px;
+  }
+
+  .Home .inner-home {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .Home .inner-home .intro{
+    width: 85%;
+    /* max-width: 400px */
+  }
+
 }

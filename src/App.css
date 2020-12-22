@@ -223,6 +223,10 @@ a.disabled-btn {
     font-size: 12px
   }
 
+  .background-image {
+    background-image: url("./img/home-phone.jpg");
+  }
+
 
 /* End header */
 }
