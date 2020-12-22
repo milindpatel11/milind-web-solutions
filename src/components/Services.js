@@ -21,7 +21,7 @@ const services_data = {
     {
       "key": 2,
       "title": "Launching MVP and Beta",
-      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback. If you prefer traditional code based development, we can also help develop, launch and iterate quickly using server-less backend approaches such as Google Firebase that make launching and iterating faster and easier. ",
+      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback. If you prefer traditional code based development, we can also help develop, launch and iterate quickly using server-less backend approaches such as Google Firebase.",
       "icon":launch
     },
     {
@@ -47,7 +47,7 @@ const services_data = {
     {
       "key": 2,
       "title": "MVP en bèta starten",
-      "description": "Start uw MVP of Beta met snelle platforms zonder code, zoals Webflow, Bubble en meer. Deze tools zijn een efficiënte manier om MVP (database en ontwerp) snel te starten en te herhalen op basis van gebruikersfeedback. Als u de voorkeur geeft aan traditionele op code gebaseerde ontwikkeling, kunnen we u ook helpen bij het snel ontwikkelen, lanceren en itereren met behulp van serverloze back-endbenaderingen zoals Google Firebase die het starten en itereren sneller en gemakkelijker maken.",
+      "description": "Start uw MVP of Beta met snelle platforms zonder code, zoals Webflow, Bubble en meer. Deze tools zijn een efficiënte manier om MVP (database en ontwerp) snel te starten en te herhalen op basis van gebruikersfeedback. Als u de voorkeur geeft aan traditionele op code gebaseerde ontwikkeling, kunnen we u ook helpen bij het snel ontwikkelen, lanceren en itereren met behulp van serverloze back-endbenaderingen zoals Google Firebase.",
       "icon":launch
     },
     {
