@@ -21,7 +21,7 @@ const services_data = {
     {
       "key": 2,
       "title": "Launching MVP and Beta",
-      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback. If you prefer traditional code based development, we can also help develop, launch and iterate quickly based using server-less backend approaches such as Google Firebase that make launching and iterating faster and easier. ",
+      "description": "Launch your MVP or Beta with fast no-code platforms such as Webflow, Bubble and more. These tools are efficient way to launch MVP (database and design) quickly and iterate according to user feedback. If you prefer traditional code based development, we can also help develop, launch and iterate quickly using server-less backend approaches such as Google Firebase that make launching and iterating faster and easier. ",
       "icon":launch
     },
     {
