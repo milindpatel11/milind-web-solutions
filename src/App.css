@@ -149,6 +149,7 @@ a.disabled-btn {
   font-size: 14px
 }
 
+/* start- dummy div workaround to get scrolling to right location from menu items (to counter header height) */
 
 .dummy-div {
 	min-height: 70px;
@@ -158,6 +159,8 @@ a.disabled-btn {
 	align-self: flex-end;
 	bottom: 0
 }
+
+/*end - dummy div for  */
 
 .Footer {
   display: flex;

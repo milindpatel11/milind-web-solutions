@@ -30,7 +30,7 @@ function Home(props) {
           <h1>{home_filt.l3}<span></span></h1>
           <div className="home-bttns">
             <a href='#Projects' type="button" className="cta" >{home_filt.bttn1}</a>
-            <a href='#Projects' type="button" className="cta" >{home_filt.bttn2}</a>
+            <a href='#Services' type="button" className="cta" >{home_filt.bttn2}</a>
           </div>
         </div>
 
