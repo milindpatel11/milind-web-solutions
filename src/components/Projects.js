@@ -4,7 +4,7 @@ import pic from '../img/img-1.png';
 import milind from '../img/milind.jpeg';
 import kea from '../img/kea.jpeg';
 import electsmart from '../img/electsmart.jpeg';
-import electsmartbeta from '../img/electsmart-beta.jpeg';
+import electsmartbeta from '../img/electsmartmvp.jpeg';
 
 
 
@@ -39,10 +39,10 @@ const projects_data = {
     },
     {
       "key": 4,
-      "title": "ElectsmartUS (Archived MVP page)",
-      "subtitle":"Type address and get your US elections",
-      "link":"https://electsmart-beta.bubbleapps.io/version-test/preview",
-      "description": "Milind founded this non-profit startup for 2020 US elections. It was developed using no-code tool 'Bubble'. This website is designed to get MVP out there quickly and iterate fast with user feedback. This site uses API and real database from which it fetches needed extensive amount of data from backend.",
+      "title": "ElectsmartUS (MVP page - In Developement)",
+      "subtitle":"Started from No-code now it it Yes-Code",
+      "link":"https://electsmart-mvp.netlify.app",
+      "description": "Milind founded this non-profit startup for 2020 US elections. Initially it was developed using no-code tool 'Bubble' to get MVP out there quickly and iterate fast with user feedback. From no-code to now it is developed with code (ReactJs on Frontend and Firebase with NodeJS/Express for server side). This site uses API and firebase database from which it fetches needed elections and candidates for address searched.",
       "background":electsmartbeta
     }
   ],
@@ -74,10 +74,10 @@ const projects_data = {
     },
     {
       "key": 4,
-      "title": "ElectsmartUS (Gearchiveerde MVP-pagina)",
-      "subtitle":"Typ het adres en ontvang uw Amerikaanse verkiezingen",
-      "link":"https://electsmart-beta.bubbleapps.io/version-test/preview",
-      "description": "Milind richtte deze non-profit startup op voor de Amerikaanse verkiezingen van 2020. Het is ontwikkeld met behulp van de no-code tool 'Bubble'. Deze website is ontworpen om MVP snel naar buiten te brengen en snel te herhalen met gebruikersfeedback. Deze site maakt gebruik van een API en een echte database waaruit het de benodigde uitgebreide hoeveelheid gegevens uit de backend haalt.",
+      "title": "ElectsmartUS (MVP-pagina - In ontwikkeling)",
+      "subtitle":"Begonnen met No-code, nu is het Yes-Code",
+      "link":"https://electsmart-mvp.netlify.app",
+      "description": "Milind richtte deze non-profit startup op voor de Amerikaanse verkiezingen van 2020. Aanvankelijk werd het ontwikkeld met behulp van de tool 'Bubble' zonder code om MVP snel naar buiten te brengen en snel te herhalen met gebruikersfeedback. Van no-code tot nu is het ontwikkeld met code (ReactJs op Frontend en Firebase met NodeJS / Express voor serverzijde). Deze site maakt gebruik van een API en een firebase-database waaruit het de benodigde verkiezingen en kandidaten voor het zoeken naar adressen ophaalt.",
       "background":electsmartbeta
     }
   ],
@@ -161,8 +161,7 @@ function Projects(props) {
       </div>
       <div className="upcoming-project flex-column">
         <h3 className='flex-row'> What's Cooking Next <h2>  ‍🍳 </h2> </h3>
-        <h3> ElectsmartUS coded MVP Wesbite hosted on Firebase with Login (ReactJs + NodeJS/Express)</h3>
-        <h3> ElectsmartUS coded MVP Mobile App hosted on Firebase with Login (React-Native + NodeJS/Express)</h3>
+        <h3> ElectsmartUS coded MVP Mobile App with Firebase (React-Native + NodeJS/Express)</h3>
       </div>
 
       <div className='dummy-div' id="Contact"> </div>
