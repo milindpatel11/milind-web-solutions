@@ -5,7 +5,7 @@ import milind from '../img/milind.jpeg';
 import kea from '../img/kea.jpeg';
 import electsmart from '../img/electsmart.jpeg';
 import electsmartbeta from '../img/electsmartmvp.jpeg';
-
+import electsmartappmvp from '../img/electsmartappmvp.jpeg';
 
 
 const projects_title = { "EN": { "l1": "Recent", "l2":'Portfolio'},
@@ -40,10 +40,18 @@ const projects_data = {
     {
       "key": 4,
       "title": "ElectsmartUS (MVP page - In Developement)",
-      "subtitle":"Started from No-code now it it Yes-Code",
+      "subtitle":"Started from No-code now it is Yes-Code",
       "link":"https://electsmart-mvp.netlify.app",
       "description": "Milind founded this non-profit startup for 2020 US elections. Initially it was developed using no-code tool 'Bubble' to get MVP out there quickly and iterate fast with user feedback. From no-code to now it is developed with code (ReactJs on Frontend and Firebase with NodeJS/Express for server side). This site uses API and firebase database from which it fetches needed elections and candidates for address searched.",
       "background":electsmartbeta
+    },
+    {
+      "key": 5,
+      "title": "ElectsmartUS (MVP app - In Developement)",
+      "subtitle":"Mobile app MVP with React Native",
+      "link":"https://www.youtube.com/watch?v=P2Tdzv_1WOU",
+      "description": "Work in Progress preview of unpublished mobile app MVP for electsmartUS. This is to completment electsmartUS web for more accesible form preffered by many users.",
+      "background":electsmartappmvp
     }
   ],
   "NL": [
@@ -79,6 +87,14 @@ const projects_data = {
       "link":"https://electsmart-mvp.netlify.app",
       "description": "Milind richtte deze non-profit startup op voor de Amerikaanse verkiezingen van 2020. Aanvankelijk werd het ontwikkeld met behulp van de tool 'Bubble' zonder code om MVP snel naar buiten te brengen en snel te herhalen met gebruikersfeedback. Van no-code tot nu is het ontwikkeld met code (ReactJs op Frontend en Firebase met NodeJS / Express voor serverzijde). Deze site maakt gebruik van een API en een firebase-database waaruit het de benodigde verkiezingen en kandidaten voor het zoeken naar adressen ophaalt.",
       "background":electsmartbeta
+    },
+    {
+      "key": 5,
+      "title": "ElectsmartUS (MVP-app - In ontwikkeling)",
+      "subtitle":"MMVP voor mobiele apps met React Native",
+      "link":"https://www.youtube.com/watch?v=P2Tdzv_1WOU",
+      "description": "Werk in uitvoering preview van niet-gepubliceerde mobiele app MVP voor electsmartUS. Dit is om electsmartUS web te voltooien voor een meer toegankelijke vorm die door veel gebruikers wordt geprefereerd.",
+      "background":electsmartappmvp
     }
   ],
 }
@@ -159,10 +175,10 @@ function Projects(props) {
       <div className="all-projects flex-column">
         {ProjectItems}
       </div>
-      <div className="upcoming-project flex-column">
+    { /* <div className="upcoming-project flex-column">
         <h3 className='flex-row'> What's Cooking Next <h2>  ‍🍳 </h2> </h3>
         <h3> ElectsmartUS coded MVP Mobile App with Firebase (React-Native + NodeJS/Express)</h3>
-      </div>
+      </div> */}
 
       <div className='dummy-div' id="Contact"> </div>
     </div>
